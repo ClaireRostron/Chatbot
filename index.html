@@ -25,11 +25,11 @@
 
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #6e00ff;
+		background-color: #ff00a5;
 		font-family: "Sky Text", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #6e00ff;
+		outline: 1px solid #ff00a5;
 	}
 </style>
 
@@ -39,8 +39,8 @@
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
-		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+		embedded_svc.settings.defaultMinimizedText = 'Chat with Globo'; //(Defaults to Chat with an Expert)
+		embedded_svc.settings.disabledMinimizedText = 'Demo Bot is Offline'; //(Defaults to Agent Offline)
 
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
