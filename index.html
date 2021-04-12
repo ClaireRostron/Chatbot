@@ -32,16 +32,26 @@
 	}
 </style>
 
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #005290;
+		font-family: "Arial", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #005290;
+	}
+</style>
+
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
-		embedded_svc.settings.defaultMinimizedText = 'Chat with Globo'; //(Defaults to Chat with an Expert)
-		embedded_svc.settings.disabledMinimizedText = 'Demo Bot is Offline'; //(Defaults to Agent Offline)
+		embedded_svc.settings.defaultMinimizedText = 'Try Knowledge Bot'; //(Defaults to Chat with an Expert)
+		embedded_svc.settings.disabledMinimizedText = 'Knowledge Bot Offline'; //(Defaults to Agent Offline)
 
-		embedded_svc.settings.loadingText = 'Loading'; //(Defaults to Loading)
+		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
 		// Settings for Chat
@@ -57,17 +67,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://ott-nbcu--stage.my.salesforce.com',
-			'https://stage-ott-nbcu.cs190.force.com',
+			'https://nowtv--sysint.my.salesforce.com',
+			'https://sysint-nowtvpartner.cs86.force.com/BotTesting',
 			gslbBaseURL,
-			'00D7b000000H1E3',
-			'LWC_Bot_Snap_in',
+			'00D7E000000Fd1e',
+			'Bot_Testing',
 			{
-				baseLiveAgentContentURL: 'https://c.la3-c1cs-ia5.salesforceliveagent.com/content',
-				deploymentId: '5723i000000Lk3a',
-				buttonId: '5733i000000LkwF',
-				baseLiveAgentURL: 'https://d.la3-c1cs-ia5.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I7b000000009wEAA_178168f925f',
+				baseLiveAgentContentURL: 'https://c.la1-c1cs-lo2.salesforceliveagent.com/content',
+				deploymentId: '572G00000004EEz',
+				buttonId: '5734I000000L4zx',
+				baseLiveAgentURL: 'https://d.la1-c1cs-lo2.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I4I0000008ONAUA2_1755696d56f',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -75,7 +85,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://ott-nbcu--stage.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://nowtv--sysint.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
