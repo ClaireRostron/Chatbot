@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Chatbot by Botalytics Team</title>
+    <title>Chatbot by ClaireRostron</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">  
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -17,11 +17,9 @@
       <h2 class="project-tagline">Place to host chatbot tests</h2>
       <a href="https://github.com/ClaireRostron/Chatbot" class="btn">View on GitHub</a>
     </section>
-
     <section class="main-content">
-
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/ClaireRostron/Chatbot">Chatbot</a> is maintained by <a href="https://github.com/ClaireRostron">Botalytics</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/ClaireRostron/Chatbot">Chatbot</a> is maintained by <a href="https://github.com/ClaireRostron">ClaireRostron</a>.</span>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #ff00a5;
@@ -31,29 +29,15 @@
 		outline: 1px solid #ff00a5;
 	}
 </style>
-
-<style type='text/css'>
-	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #005290;
-		font-family: "Arial", sans-serif;
-	}
-	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #005290;
-	}
-</style>
-
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
-
 		embedded_svc.settings.defaultMinimizedText = 'Try Knowledge Bot'; //(Defaults to Chat with an Expert)
 		embedded_svc.settings.disabledMinimizedText = 'Knowledge Bot Offline'; //(Defaults to Agent Offline)
-
-		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+		embedded_svc.settings.loadingText = 'Loading'; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
-
 		// Settings for Chat
 		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
 			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
@@ -62,7 +46,6 @@
 		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
 		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
@@ -71,7 +54,7 @@
 			'https://sysint-nowtvpartner.cs86.force.com/BotTesting',
 			gslbBaseURL,
 			'00D7E000000Fd1e',
-			'Bot_Testing',
+			'LWC_Bot_Snap_in',
 			{
 				baseLiveAgentContentURL: 'https://c.la1-c1cs-lo2.salesforceliveagent.com/content',
 				deploymentId: '572G00000004EEz',
@@ -82,7 +65,6 @@
 			}
 		);
 	};
-
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
 		s.setAttribute('src', 'https://nowtv--sysint.my.salesforce.com/embeddedservice/5.0/esw.min.js');
@@ -94,11 +76,8 @@
 		initESW('https://service.force.com');
 	}
 </script>
-
 	    
 	    </footer>	    
-
     </section>
-
   </body>
 </html>
